@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        .conta{
+            padding: 20px;
+            min-height: 100vh;
+            min-width: 100vh;
+            background: black;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 1rem;
+
+        }
+        .item1{
+            background-color: yellow;
+            
+        }
+        .item2,#b{
+            background-color: wheat;
+        }
+        .item3,#c{
+            background-color: violet;
+        
+        }
+        .item4,#d{
+            background-color: tomato;
+        }
+        .item5,#e{
+            background-color: red;
+        }
+        .item6,#f{
+            background-color: seagreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conta">
+        <div class="item1" id="a"></div>
+        <div class="item1" id="b"></div>
+        <div class="item1" id="c"></div>
+        <div class="item1" id="d"></div>
+        <div class="item1" id="e"></div>
+        <div class="item1" id="f"></div>
+    </div>
+    
+</body>
+</html>
